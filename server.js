@@ -13,9 +13,9 @@ const game = require('./models/game.js');
 mongoose.connect(process.env.DATABASE_URL)
 
 // MIDDLEWARE  & BODY PARSER
-router.use(express.urlencoded({ extended: true }));
+app.use(express.urlencoded({ extended: true }));
 
-router.use(methodOverride("_method"))
+app.use(methodOverride('_method'));
 app.use('/games', gameController);
 app.use('/games', game)
 

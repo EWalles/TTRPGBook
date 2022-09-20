@@ -36,7 +36,7 @@ app.put('/:id', (req, res) => {
     game.findByIdAndUpdate(req.params.id, req.body, {
         new: true
     }, (error, updatedgame) => {
-        res.redirect(`/games`);
+        res.redirect(`/games/${req.params.id}`);
     });
 });
 

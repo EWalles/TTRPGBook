@@ -95,7 +95,7 @@
 </header>
 <main>
     <form action="/games/<%=game._id%>?_method=PUT" method="POST">
-        Title: <input type="text" name="title" value="<%=game%>"><br>
+        Title: <input type="text" name="title" value="<%=game.title%>"><br>
         Author: <input type="text" name="author" value="<%=game.author%>"><br>
         Company: <input type="text" name="title" value="<%=game.company%>"><br>
               <input type="submit" value="Save Changes">
