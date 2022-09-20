@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        html {
+          font-family: palatino, URW Palladio L, serif; /* 1 */
+          -ms-text-size-adjust: 100%; /* 2 */
+          -webkit-text-size-adjust: 100%; /* 2 */
+          }
+        body {
+          background-color:#4dc3ff;
+          margin: 10px;
+          }
+        ul {
+          list-style-type: none;
+          }
+      
+        .button {
+          border: none;
+          color: white;
+          padding: 16px 32px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 18px;
+          margin: 4px 2px;
+          transition-duration: 0.4s;
+          cursor: pointer;
+        }
+          
+        .button1 {
+          background-color: white; 
+          color: black;
+          border: 2px solid #48319b;
+        }
+          
+        .button1:hover {
+          background-color: #1c2fdb;
+          color: white;
+        }
+         
+        .button2 {
+          background-color: white; 
+          color: black; 
+          border: 2px solid #48319b;
+        }
+          
+        .button2:hover {
+          background-color: #1c2fdb;
+          color: white;
+        }
+          
+        .button3 {
+          background-color: white; 
+          color: black; 
+          border: 2px solid #48319b;
+        }
+        
+        .button3:hover {
+          background-color: #1c2fdb;
+          color: white;
+        }
+        
+        .button4 {
+          background-color: white; 
+          color: black; 
+          border: 2px solid #48319b;
+          }
+          
+        .button4:hover {
+          background-color: #1c2fdb;
+          color: white;
+        }
+      </style>
+      <title>Main Page</title>
+      </head>
+  <body>
+    <nav class = "button">
+      <ul>                           
+                <li>
+                    <a href ="/" class="button1">Home</a>
+                </li>
+                <br>
+                <li>
+                    <a href ="/games" class="button2">Games</a>
+                </li>
+                <br>
+    </nav>
+
+</head>
+<body>
+<header>
+
+
+</header>
+<main>
+    <form action="/games/<%=game._id%>?_method=PUT" method="POST">
+        Title: <input type="text" name="title" value="<%=game%>"><br>
+        Author: <input type="text" name="author" value="<%=game.author%>"><br>
+        Company: <input type="text" name="title" value="<%=game.company%>"><br>
+              <input type="submit" value="Save Changes">
+    </form>
+</main>
+</div>
+
+</body>
+</html>
