@@ -34,3 +34,5 @@ https://ttrpgbook.herokuapp.com/
 <li> add a 'include your discord' link
 <li> add in splash pages for the games (reviews, blurbs)
 </ul>
+You can also see my Trello with my current and future plans here:
+  https://trello.com/b/lL7ai3hr/project-2
